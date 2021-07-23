@@ -72,3 +72,43 @@ body {
 #menu li:hover {
   background: #0b98f7;
 }
+
+#post {
+  width: 60%;
+  float: left;
+  font-family: 'Helvetica';
+}
+#post {
+  padding: 7px;
+}
+#articulos h2 {
+  font: size 30px;
+  color: rgb(1, 79, 131);
+}
+.fecha {
+  display: block;
+  color: gray;
+  margin: 5px;
+}
+
+#articulos p {
+  margin-top: 10 px;
+  margin-bottom: 20px;
+  line-height: 21px;
+  text-align: justify;
+}
+
+.btn {
+  display: block;
+  border: rgb(1, 79, 131) solid 1px;
+  background: #0b98f7;
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px rgb(1, 79, 131);
+  padding: 10px;
+  text-align: center;
+  width: 90px;
+  margin-bottom: 30px;
+}
