@@ -8,6 +8,32 @@
 
     <!-- estilos CSS -->
     <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- slider: -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
+
+    <!-- Jquery: -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <!-- formateador moment js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+      integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es.js"
+      integrity="sha512-eXklzBQbcJSSLIpFU8oD0Nj8SwRZdJLU0kL2Wr8hW6JWnG4E0KeEE66GvVLWMCZzUEhxJIy8uh+nqImF6lw/DQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </head>
   <body>
     <section id="global">
@@ -41,43 +67,26 @@
       </header>
 
       <!-- slider -->
-      <div id="slider">slider</div>
+      <div id="slider">
+        <div class="bxslider">
+          <div>
+            <img src="/img/slider/slider1.jpg" title="The Future" />
+          </div>
+          <div>
+            <img src="/img/slider/slider2.jpg" title="Full Stack MERN" />
+          </div>
+
+          <div>
+            <img src="/img/slider/slider4.jpeg" title="Javascript" />
+          </div>
+        </div>
+      </div>
 
       <!-- contenido -->
 
       <section id="contenido">
         <div id="post">
-          <article id="articulos">
-            <h2>Articulos</h2>
-            <span class="fecha">Fecha de publicacion</span>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
-              qui! Earum dolore, pariatur sit reprehenderit est nulla harum,
-              quidem deserunt labore dolores aut ut? Voluptatum fugit obcaecati
-              molestiae qui quis! Dolore earum itaque non et enim. Placeat magni
-              nemo reiciendis quidem consequuntur neque odit ad architecto rem
-              aperiam corporis iusto hic fugit, quae soluta fugiat facere optio
-              ipsam repudiandae recusandae.
-            </p>
-
-            <a href="#" class="btn">Leer mas</a>
-          </article>
-
-          <article id="articulos">
-            <h2>Articulos</h2>
-            <span class="fecha">Fecha de publicacion</span>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
-              qui! Earum dolore, pariatur sit reprehenderit est nulla harum,
-              quidem deserunt labore dolores aut ut? Voluptatum fugit obcaecati
-              molestiae qui quis! Dolore earum itaque non et enim. Placeat magni
-              nemo reiciendis quidem consequuntur neque odit ad architecto rem
-              aperiam corporis iusto hic fugit, quae soluta fugiat facere optio
-              ipsam repudiandae recusandae.
-            </p>
-
-            <a href="#" class="btn">Leer mas</a>
-          </article>
+          <!-- carga los post des post.js -->
         </div>
         <aside id="aside">
           <div class="about">
@@ -140,8 +149,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="/js/lotttie.js"></script>
 
     <!-- javascript -->
     <script src="/js/index.js"></script>
+    <!-- post -->
+    <script src="/js/post.js"></script>
   </body>
 </html>

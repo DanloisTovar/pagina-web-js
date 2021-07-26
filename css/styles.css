@@ -94,6 +94,12 @@ body {
   background: #0b98f7;
 }
 
+/* slider: */
+
+.bx-wrapper,
+.bx-viewport {
+  height: 385px !important;
+}
 #post {
   width: 60%;
   float: left;
