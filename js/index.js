@@ -1,8 +1,12 @@
-/* slider */
-$(document).ready(function () {
-  $('.bxslider').bxSlider({
-    mode: 'fade',
-    captions: true,
-    slideWidth: 1200,
-  });
-});
+/* lottie (imagenes animadas) */
+import {} from '../js/lotttie.js';
+/* slider: */
+import { iniciarSlider } from '../js/slider.js';
+/* post: */
+import { monstarPost } from '../js/post.js';
+/* modo dark */
+import { modoDark } from './modoDark.js';
+
+iniciarSlider();
+monstarPost();
+modoDark();
