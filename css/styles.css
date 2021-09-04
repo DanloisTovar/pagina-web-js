@@ -113,6 +113,11 @@ body {
   font: size 30px;
   color: rgb(1, 79, 131);
 }
+h2 {
+  font: size 30px;
+  color: rgb(1, 79, 131);
+  font-family: 'Helvetica';
+}
 .fecha {
   display: block;
   color: gray;
@@ -182,7 +187,9 @@ body {
 
 form input[type='text'],
 form input[type='password'],
-form input[type='email'] {
+form input[type='email'],
+form input[type='number'],
+select {
   padding: 5px;
   border-radius: 2px;
   border: 1px solid rgb(1, 79, 131);
@@ -259,4 +266,50 @@ footer {
   text-decoration: none;
   display: block;
   float: right;
+}
+#box {
+  width: 60%;
+  float: left;
+  margin-top: 40px;
+}
+
+#acordeon {
+  margin-top: 20px;
+}
+
+#reloj {
+  font-family: 'Helvetica';
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(1, 79, 131);
+  border: 5px solid rgb(1, 79, 131);
+  width: 30%;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+/* formulario contacto: */
+
+#formulario-contacto {
+  padding: 5px;
+  border-radius: 2px;
+
+  width: 50%;
+  margin-top: 15px;
+
+  font-family: 'Helvetica';
+  color: rgb(1, 79, 131);
+  margin-top: 5px;
+  margin-bottom: 10px;
+
+  align-items: center;
+}
+
+#formulario-contacto label {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+}
+#formulario-contacto select {
+  width: 30%;
 }

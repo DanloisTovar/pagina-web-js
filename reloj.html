@@ -8,7 +8,7 @@
 
     <!-- estilos CSS -->
     <!-- modo blanco -->
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
     <!-- modo oscuro: -->
     <link id="tema" rel="stylesheet" href="css/modoDark.css" />
 
@@ -22,21 +22,37 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<!-- formateador moment js -->
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"
+></script>
 
-   <!-- formateador moment js -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
-      integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es.js"
+integrity="sha512-eXklzBQbcJSSLIpFU8oD0Nj8SwRZdJLU0kL2Wr8hW6JWnG4E0KeEE66GvVLWMCZzUEhxJIy8uh+nqImF6lw/DQ=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"
+></script>
 
+       
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es.js"
-      integrity="sha512-eXklzBQbcJSSLIpFU8oD0Nj8SwRZdJLU0kL2Wr8hW6JWnG4E0KeEE66GvVLWMCZzUEhxJIy8uh+nqImF6lw/DQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+    integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es.js"
+    integrity="sha512-eXklzBQbcJSSLIpFU8oD0Nj8SwRZdJLU0kL2Wr8hW6JWnG4E0KeEE66GvVLWMCZzUEhxJIy8uh+nqImF6lw/DQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+
+    
   </head>
   <body>
     <div id="cambiar-tema">
@@ -63,11 +79,11 @@
         <nav id="nav">
           <ul id="menu">
             <li>
-              <a href="index.html">Inicio</a>
+              <a href="/index.html">Inicio</a>
             </li>
 
             <li>
-              <a href="reloj.html">Reloj</a>
+              <a href="#">Reloj</a>
             </li>
 
             <li>
@@ -81,28 +97,15 @@
         </nav>
       </header>
 
-      <!-- slider -->
-      <div id="slider">
-        <div class="bxslider">
-          <div>
-            <img src="/img/slider/slider1.jpg" title="The Future" />
-          </div>
-          <div>
-            <img src="/img/slider/slider2.jpg" title="Full Stack MERN" />
-          </div>
-
-          <div>
-            <img src="/img/slider/slider4.jpeg" title="Javascript" />
-          </div>
-        </div>
-      </div>
 
       <!-- contenido -->
 
       <section id="contenido">
-        <div id="post">
-          <!-- carga los post des post.js -->
-        </div>
+       <!-- cargar reloj -->
+
+	   <div id="reloj">
+		   
+	   </div>
         <aside id="aside">
           <div class="about">
             <h4><span>quien soy?</span></h4>
@@ -173,3 +176,4 @@
     <script type="module" src="/js/index.js"></script>
   </body>
 </html>
+

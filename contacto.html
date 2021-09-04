@@ -8,7 +8,7 @@
 
     <!-- estilos CSS -->
     <!-- modo blanco -->
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
     <!-- modo oscuro: -->
     <link id="tema" rel="stylesheet" href="css/modoDark.css" />
 
@@ -22,21 +22,37 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+ <!-- jquery ui -->
 
-   <!-- formateador moment js -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
-      integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+ <link rel="stylesheet" href="js/jquery-ui/jquery-ui.min.css" />
+ <link rel="stylesheet" href="js/jquery-ui/jquery-ui.structure.min.css" />
+ <link rel="stylesheet" href="js/jquery-ui/jquery-ui.theme.min.css" />
 
+ <script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
+       
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es.js"
-      integrity="sha512-eXklzBQbcJSSLIpFU8oD0Nj8SwRZdJLU0kL2Wr8hW6JWnG4E0KeEE66GvVLWMCZzUEhxJIy8uh+nqImF6lw/DQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+    integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es.js"
+    integrity="sha512-eXklzBQbcJSSLIpFU8oD0Nj8SwRZdJLU0kL2Wr8hW6JWnG4E0KeEE66GvVLWMCZzUEhxJIy8uh+nqImF6lw/DQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+
+  <!-- jquery validattor: -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js" integrity="sha512-37T7leoNS06R80c8Ulq7cdCDU5MNQBwlYoy1TX/WUsLFC2eYNqtKlV0QjH7r8JpG/S0GUMZwebnVFLPd6SU5yg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/additional-methods.min.js" integrity="sha512-XZEy8UQ9rngkxQVugAdOuBRDmJ5N4vCuNXCh8KlniZgDKTvf7zl75QBtaVG1lEhMFe2a2DuA22nZYY+qsI2/xA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/localization/messages_es_AR.min.js" integrity="sha512-IeJBPMkrv1HBLwIVpXQ2kEh24ocSZGuSXx6Jl5SIbeLoOtkXnEBghoSVmeJQerm3cRK9uKb1xxuHAEdxuVsBxg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  
   </head>
   <body>
     <div id="cambiar-tema">
@@ -63,15 +79,15 @@
         <nav id="nav">
           <ul id="menu">
             <li>
-              <a href="index.html">Inicio</a>
+              <a href="/index.html">Inicio</a>
             </li>
 
             <li>
-              <a href="reloj.html">Reloj</a>
+              <a href="/reloj.html">Reloj</a>
             </li>
 
             <li>
-              <a href="sobre-mi.html">Sobre mi</a>
+              <a href="/sobre-mi.html">Sobre mi</a>
             </li>
 
             <li>
@@ -81,27 +97,45 @@
         </nav>
       </header>
 
-      <!-- slider -->
-      <div id="slider">
-        <div class="bxslider">
-          <div>
-            <img src="/img/slider/slider1.jpg" title="The Future" />
-          </div>
-          <div>
-            <img src="/img/slider/slider2.jpg" title="Full Stack MERN" />
-          </div>
-
-          <div>
-            <img src="/img/slider/slider4.jpeg" title="Javascript" />
-          </div>
-        </div>
-      </div>
 
       <!-- contenido -->
 
       <section id="contenido">
-        <div id="post">
-          <!-- carga los post des post.js -->
+        <div id="box">
+          <!-- cargar formulario  -->
+          <h2>Contactame:</h2>
+          <form action="" id="formulario-contacto" method="POST">
+
+
+            <label for="nombre">Nombre</label>
+
+            <input type="text" name="nombre" placeholder="Nombre" data-validation="alphanumeric">
+
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" placeholder="Apellido" data-validation="alphanumeric">
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Email" data-validation="email">
+            <label for="sexo">Sexo</label>
+          
+            <select name="sexo" data-validation="required">
+              <option value="hombre">
+                Hombre
+              </option>
+
+              <option value="mujer">
+               Mujer
+              </option>
+
+            </select>
+
+            <label for="date">Fecha de Nacimiento</label>
+            <input type="text" name="date" data-validation-format="dd/mm/yyyy" data-validation="date" >
+
+            <label for="edad">Edad</label>
+            <input type="number" name="edad" placeholder="Edad" data-validation="number">
+
+            <input type="submit" value="Enviar">
+          </form>
         </div>
         <aside id="aside">
           <div class="about">
@@ -173,3 +207,4 @@
     <script type="module" src="/js/index.js"></script>
   </body>
 </html>
+

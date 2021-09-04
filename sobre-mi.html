@@ -8,7 +8,7 @@
 
     <!-- estilos CSS -->
     <!-- modo blanco -->
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
     <!-- modo oscuro: -->
     <link id="tema" rel="stylesheet" href="css/modoDark.css" />
 
@@ -22,21 +22,29 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+ <!-- jquery ui -->
 
-   <!-- formateador moment js -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
-      integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+ <link rel="stylesheet" href="js/jquery-ui/jquery-ui.min.css" />
+ <link rel="stylesheet" href="js/jquery-ui/jquery-ui.structure.min.css" />
+ <link rel="stylesheet" href="js/jquery-ui/jquery-ui.theme.min.css" />
 
+ <script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
+       
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es.js"
-      integrity="sha512-eXklzBQbcJSSLIpFU8oD0Nj8SwRZdJLU0kL2Wr8hW6JWnG4E0KeEE66GvVLWMCZzUEhxJIy8uh+nqImF6lw/DQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+    integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es.js"
+    integrity="sha512-eXklzBQbcJSSLIpFU8oD0Nj8SwRZdJLU0kL2Wr8hW6JWnG4E0KeEE66GvVLWMCZzUEhxJIy8uh+nqImF6lw/DQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+
+    
   </head>
   <body>
     <div id="cambiar-tema">
@@ -63,15 +71,15 @@
         <nav id="nav">
           <ul id="menu">
             <li>
-              <a href="index.html">Inicio</a>
+              <a href="/index.html">Inicio</a>
             </li>
 
             <li>
-              <a href="reloj.html">Reloj</a>
+              <a href="/reloj.html">Reloj</a>
             </li>
 
             <li>
-              <a href="sobre-mi.html">Sobre mi</a>
+              <a href="/sobre-mi.html">Sobre mi</a>
             </li>
 
             <li>
@@ -81,27 +89,37 @@
         </nav>
       </header>
 
-      <!-- slider -->
-      <div id="slider">
-        <div class="bxslider">
-          <div>
-            <img src="/img/slider/slider1.jpg" title="The Future" />
-          </div>
-          <div>
-            <img src="/img/slider/slider2.jpg" title="Full Stack MERN" />
-          </div>
-
-          <div>
-            <img src="/img/slider/slider4.jpeg" title="Javascript" />
-          </div>
-        </div>
-      </div>
 
       <!-- contenido -->
 
       <section id="contenido">
-        <div id="post">
-          <!-- carga los post des post.js -->
+        <div id="box">
+          <!-- cargar box -->
+          <h2 id="articulos">Sobre mi</h2>
+          <div id="acordeon">
+            
+            <h3>Quien soy</h3>
+            <div>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, est dolorem. Molestias cumque odio reiciendis alias eligendi quis quidem, laudantium, animi voluptatem et dolorem esse officia illum itaque eum maxime?
+              </p>
+            </div>
+
+            <h3>Nuestros servicios</h3>
+            <div>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, est dolorem. Molestias cumque odio reiciendis alias eligendi quis quidem, laudantium, animi voluptatem et dolorem esse officia illum itaque eum maxime?
+              </p>
+            </div>
+
+            <h3>Nuestros clientes</h3>
+            <div>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, est dolorem. Molestias cumque odio reiciendis alias eligendi quis quidem, laudantium, animi voluptatem et dolorem esse officia illum itaque eum maxime?
+              </p>
+            </div>
+            
+          </div>
         </div>
         <aside id="aside">
           <div class="about">
@@ -173,3 +191,4 @@
     <script type="module" src="/js/index.js"></script>
   </body>
 </html>
+
