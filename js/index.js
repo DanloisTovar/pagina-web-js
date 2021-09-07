@@ -22,7 +22,7 @@ import { imprimirReloj } from './reloj.js';
 /* importar validacion: */
 import { validar } from './validacion.js';
 iniciarSlider();
-
+monstarPost();
 if (window.location.href.indexOf('index') > -1) {
   monstarPost();
 }
